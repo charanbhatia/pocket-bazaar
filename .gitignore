@@ -2,9 +2,11 @@
 
 # dependencies
 node_modules/
+bower_components/
 
 # Expo
 .expo/
+.expo-shared/
 dist/
 web-build/
 
@@ -23,14 +25,34 @@ web-build/
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+lerna-debug.log*
 
 # macOS
 .DS_Store
 *.pem
 
 # local env files
-.env*.local
 .env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # typescript
 *.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# logs
+logs
+*.log
+
+# misc
+.cache/
+coverage/
+.nyc_output/
